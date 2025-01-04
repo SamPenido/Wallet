@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento com PayPal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 600px;
+            margin-top: 50px;
+        }
+
+        .card {
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            background-color: #f1f1f1;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .form-control {
+            border-radius: 5px;
+            padding: 15px;
+            font-size: 16px;
+        }
+
+        .btn-paypal {
+            background-color: #0070ba;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 5px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .btn-paypal:hover {
+            background-color: #00649b;
+        }
+
+        .summary-card {
+            margin-top: 30px;
+        }
+
+        .summary-card .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .summary-card .save {
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .line {
+            border-top: 1px solid #ddd;
+            margin: 20px 0;
+        }
+
+        .footer-text {
+            font-size: 14px;
+            color: #777;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Payment Section -->
+        <div class="card">
+            <div class="card-header">
+                Pagamento com PayPal
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="paypalEmail">E-mail do PayPal</label>
+                    <input type="email" class="form-control" id="paypalEmail" placeholder="Digite seu e-mail do PayPal">
+                </div>
+                <button class="btn btn-paypal">Pagar com PayPal</button>
+            </div>
+        </div>
+
+        <!-- Summary Section -->
+        <div class="card summary-card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <span>Plano Pro (Cobrança Mensal)</span>
+                    <span class="price">$9.99</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <span>Economize 20% com cobrança anual</span>
+                    <span class="save">-20%</span>
+                </div>
+                <hr class="line">
+                <div class="d-flex justify-content-between">
+                    <span>Total hoje</span>
+                    <span>$0.00</span>
+                </div>
+                <button class="btn btn-primary btn-block">Teste grátis por 30 dias</button>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer-text">
+            <p>Seu pagamento é protegido com criptografia SSL.</p>
+        </div>
+    </div>
+
+    <!-- JS Libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

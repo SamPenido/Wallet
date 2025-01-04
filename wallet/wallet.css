@@ -1,0 +1,89 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Personalizar o layout do container */
+.container {
+    max-width: 1200px;
+}
+
+/* Ajustes para o cartão de pagamento */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #fff;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.payment-card-body input {
+    padding-left: 40px;
+}
+
+.input {
+    position: relative;
+}
+
+.input i {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    color: #6c757d;
+}
+
+/* Personalizar botões */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.free-button {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Estilos da seção de resumo */
+.super-price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.super-month {
+    font-size: 16px;
+    color: #6c757d;
+}
+
+.billing {
+    color: #007bff;
+    font-size: 14px;
+}
+
+.billing:hover {
+    text-decoration: underline;
+}
+
+/* Personalização do layout responsivo */
+@media (max-width: 768px) {
+    .col-md-6 {
+        margin-bottom: 20px;
+    }
+}
